@@ -4,8 +4,7 @@ import mongoose from 'mongoose';
 /**
  * User Schema
  */
-const Funcs = ['superadmin', 'admin', 'user'];
-const Sexe = ['masculin', 'feminin'];
+const Funcs = ['admin', 'utilisateur'];
 const UserSchema = new mongoose.Schema({
   nom: {
     type: String,
@@ -23,15 +22,6 @@ const UserSchema = new mongoose.Schema({
   },
   motDePasse: {
     type: String,
-    required: true
-  },
-  cle:{
-    type:String,
-    required: true
-  },
-  sexe: {
-    type: String,
-    enum:Sexe,
     required: true
   },
   role: {
