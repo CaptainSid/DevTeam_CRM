@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 /**
  * User Schema
  */
-const Funcs = ['admin', 'utilisateur'];
+const Funcs = ['admin', 'utilisateur','superadmin'];
 const UserSchema = new mongoose.Schema({
   nom: {
     type: String,

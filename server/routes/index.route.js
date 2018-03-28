@@ -15,4 +15,7 @@ router.use('/users', userRoutes);
 // mount auth routes at /auth
 router.use('/auth', authRoutes);
 
+router.use('/entreprise', entrepriseRoutes);
+
+
 export default router;
